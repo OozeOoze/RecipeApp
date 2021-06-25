@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RecipeApp.Models.Recipes>
+@{
+    ViewData["Title"] = "ListAll";
+}
+@{
+    string Shorten(string s, int i)
+    {
+        if (s.Length <= i)
+        {
+            return s;
+        }
+        else
+        {
+            return s.Substring(0, i);
+        }
+    }
+}
+
+    <h1>ListAll</h1>
+
+    <table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Shorten(item.Name,20)</td>
+                <td>@Shorten(item.Details,20)</td>
+                <td>@Shorten(item.Url,20)</td>
+                <td><a href="@Url.Action("Details","RecipeOperations",new { id = item.Id })" class="btn btn-primary">Details</a></td>
+            </tr>
+        }
+    </table>

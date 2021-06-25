@@ -1,0 +1,517 @@
+﻿@model RecipeApp.Models.Recipes
+@{
+    ViewData["Title"] = "SearchByIngIncludes";
+}
+
+<h1>SearchByIngIncludes</h1>
+
+<form asp-action="SearchResultsIngIncludes">
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing001)</label>
+        @Html.CheckBox("I1")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing002)</label>
+        @Html.CheckBox("I2")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing003)</label>
+        @Html.CheckBox("I3")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing004)</label>
+        @Html.CheckBox("I4")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing005)</label>
+        @Html.CheckBox("I5")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing006)</label>
+        @Html.CheckBox("I6")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing007)</label>
+        @Html.CheckBox("I7")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing008)</label>
+        @Html.CheckBox("I8")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing009)</label>
+        @Html.CheckBox("I9")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing010)</label>
+        @Html.CheckBox("I10")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing011)</label>
+        @Html.CheckBox("I11")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing012)</label>
+        @Html.CheckBox("I12")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing013)</label>
+        @Html.CheckBox("I13")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing014)</label>
+        @Html.CheckBox("I14")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing015)</label>
+        @Html.CheckBox("I15")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing016)</label>
+        @Html.CheckBox("I16")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing017)</label>
+        @Html.CheckBox("I17")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing018)</label>
+        @Html.CheckBox("I18")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing019)</label>
+        @Html.CheckBox("I19")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing020)</label>
+        @Html.CheckBox("I20")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing021)</label>
+        @Html.CheckBox("I21")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing022)</label>
+        @Html.CheckBox("I22")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing023)</label>
+        @Html.CheckBox("I23")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing024)</label>
+        @Html.CheckBox("I24")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing025)</label>
+        @Html.CheckBox("I25")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing026)</label>
+        @Html.CheckBox("I26")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing027)</label>
+        @Html.CheckBox("I27")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing028)</label>
+        @Html.CheckBox("I28")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing029)</label>
+        @Html.CheckBox("I29")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing030)</label>
+        @Html.CheckBox("I30")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing031)</label>
+        @Html.CheckBox("I31")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing032)</label>
+        @Html.CheckBox("I32")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing033)</label>
+        @Html.CheckBox("I33")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing034)</label>
+        @Html.CheckBox("I34")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing035)</label>
+        @Html.CheckBox("I35")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing036)</label>
+        @Html.CheckBox("I36")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing037)</label>
+        @Html.CheckBox("I37")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing038)</label>
+        @Html.CheckBox("I38")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing039)</label>
+        @Html.CheckBox("I39")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing040)</label>
+        @Html.CheckBox("I40")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing041)</label>
+        @Html.CheckBox("I41")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing042)</label>
+        @Html.CheckBox("I42")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing043)</label>
+        @Html.CheckBox("I43")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing044)</label>
+        @Html.CheckBox("I44")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing045)</label>
+        @Html.CheckBox("I45")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing046)</label>
+        @Html.CheckBox("I46")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing047)</label>
+        @Html.CheckBox("I47")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing048)</label>
+        @Html.CheckBox("I48")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing049)</label>
+        @Html.CheckBox("I49")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing050)</label>
+        @Html.CheckBox("I50")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing051)</label>
+        @Html.CheckBox("I51")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing052)</label>
+        @Html.CheckBox("I52")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing053)</label>
+        @Html.CheckBox("I53")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing054)</label>
+        @Html.CheckBox("I54")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing055)</label>
+        @Html.CheckBox("I55")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing056)</label>
+        @Html.CheckBox("I56")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing057)</label>
+        @Html.CheckBox("I57")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing058)</label>
+        @Html.CheckBox("I58")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing059)</label>
+        @Html.CheckBox("I59")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing060)</label>
+        @Html.CheckBox("I60")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing061)</label>
+        @Html.CheckBox("I61")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing062)</label>
+        @Html.CheckBox("I62")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing063)</label>
+        @Html.CheckBox("I63")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing064)</label>
+        @Html.CheckBox("I64")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing065)</label>
+        @Html.CheckBox("I65")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing066)</label>
+        @Html.CheckBox("I66")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing067)</label>
+        @Html.CheckBox("I67")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing068)</label>
+        @Html.CheckBox("I68")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing069)</label>
+        @Html.CheckBox("I69")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing070)</label>
+        @Html.CheckBox("I70")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing071)</label>
+        @Html.CheckBox("I71")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing072)</label>
+        @Html.CheckBox("I72")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing073)</label>
+        @Html.CheckBox("I73")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing074)</label>
+        @Html.CheckBox("I74")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing075)</label>
+        @Html.CheckBox("I75")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing076)</label>
+        @Html.CheckBox("I76")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing077)</label>
+        @Html.CheckBox("I77")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing078)</label>
+        @Html.CheckBox("I78")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing079)</label>
+        @Html.CheckBox("I79")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing080)</label>
+        @Html.CheckBox("I80")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing081)</label>
+        @Html.CheckBox("I81")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing082)</label>
+        @Html.CheckBox("I82")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing083)</label>
+        @Html.CheckBox("I83")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing084)</label>
+        @Html.CheckBox("I84")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing085)</label>
+        @Html.CheckBox("I85")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing086)</label>
+        @Html.CheckBox("I86")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing087)</label>
+        @Html.CheckBox("I87")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing088)</label>
+        @Html.CheckBox("I88")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing089)</label>
+        @Html.CheckBox("I89")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing090)</label>
+        @Html.CheckBox("I90")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing091)</label>
+        @Html.CheckBox("I91")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing092)</label>
+        @Html.CheckBox("I92")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing093)</label>
+        @Html.CheckBox("I93")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing094)</label>
+        @Html.CheckBox("I94")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing095)</label>
+        @Html.CheckBox("I95")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing096)</label>
+        @Html.CheckBox("I96")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing097)</label>
+        @Html.CheckBox("I97")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing098)</label>
+        @Html.CheckBox("I98")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing099)</label>
+        @Html.CheckBox("I99")
+    </div>
+
+    <div class="form-group">
+        <label for="I1" class="control-label">@Html.DisplayNameFor(model => model.Ing100)</label>
+        @Html.CheckBox("I100")
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+
+
+</form>
+
+<a asp-action="Search" class="btn btn-primary">Search with a Different Method</a>

@@ -1,0 +1,657 @@
+﻿@model IEnumerable<RecipeApp.Models.Recipes>
+@{ 
+    string Shorten(string s, int i) {
+        if (s.Length <= i) {
+            return s;
+            }
+        else {
+            return s.Substring(0, i);
+        }
+    }
+    }
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing001)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing002)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing003)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing004)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing005)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing006)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing007)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing008)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing009)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing010)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing011)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing012)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing013)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing014)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing015)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing016)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing017)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing018)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing019)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing020)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing021)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing022)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing023)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing024)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing025)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing026)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing027)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing028)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing029)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing030)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing031)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing032)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing033)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing034)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing035)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing036)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing037)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing038)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing039)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing040)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing041)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing042)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing043)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing044)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing045)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing046)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing047)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing048)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing049)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing050)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing051)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing052)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing053)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing054)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing055)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing056)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing057)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing058)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing059)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing060)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing061)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing062)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing063)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing064)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing065)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing066)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing067)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing068)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing069)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing070)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing071)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing072)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing073)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing074)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing075)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing076)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing077)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing078)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing079)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing080)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing081)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing082)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing083)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing084)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing085)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing086)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing087)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing088)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing089)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing090)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing091)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing092)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing093)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing094)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing095)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing096)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing097)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing098)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing099)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ing100)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Shorten(item.Details,20)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Url)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing001)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing002)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing003)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing004)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing005)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing006)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing007)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing008)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing009)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing010)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing011)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing012)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing013)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing014)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing015)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing016)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing017)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing018)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing019)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing020)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing021)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing022)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing023)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing024)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing025)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing026)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing027)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing028)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing029)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing030)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing031)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing032)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing033)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing034)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing035)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing036)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing037)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing038)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing039)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing040)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing041)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing042)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing043)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing044)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing045)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing046)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing047)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing048)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing049)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing050)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing051)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing052)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing053)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing054)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing055)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing056)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing057)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing058)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing059)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing060)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing061)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing062)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing063)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing064)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing065)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing066)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing067)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing068)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing069)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing070)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing071)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing072)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing073)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing074)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing075)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing076)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing077)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing078)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing079)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing080)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing081)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing082)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing083)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing084)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing085)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing086)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing087)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing088)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing089)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing090)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing091)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing092)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing093)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing094)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing095)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing096)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing097)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing098)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing099)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ing100)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
