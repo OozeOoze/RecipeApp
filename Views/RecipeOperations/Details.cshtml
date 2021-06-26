@@ -415,5 +415,5 @@
 
 <p>
     <a href="@Model.Url" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to the recipe's website!'</a>
-    <a asp-controller="RecipeOperations" asp-action="ListAll" class="btn btn-primary">Go To All Recipes</a>
+    <a asp-controller="Favorites" asp-action="AddFavorite" asp-route-id="@Model.Id" class="btn btn-primary">Add to Favorite</a>
 </p>

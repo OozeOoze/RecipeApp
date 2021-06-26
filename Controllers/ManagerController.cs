@@ -11,7 +11,7 @@ using RecipeApp.Models;
 
 namespace RecipeApp.Controllers
 {
-    [Authorize]
+    [Authorize(Policy = "readpolicy")]
     public class ManagerController : Controller
     {
         private readonly ApplicationDbContext _context;

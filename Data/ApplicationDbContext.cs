@@ -15,5 +15,6 @@ namespace RecipeApp.Data
         }
 
         public DbSet<Recipes> Recipes { get; set; }
+        public DbSet<Favorites> Favorites { get; set; }
     }
 }

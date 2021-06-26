@@ -22,9 +22,9 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@Shorten(item.Name,20)</td>
-                <td>@Shorten(item.Details,20)</td>
-                <td>@Shorten(item.Url,20)</td>
+                <td>@Shorten(item.Name,50)</td>
+                <td>@Shorten(item.Details,50)</td>
+                <td>@Shorten(item.Url,50)</td>
                 <td><a href="@Url.Action("Details","RecipeOperations",new { id = item.Id })" class="btn btn-primary">Details</a></td>
             </tr>
         }

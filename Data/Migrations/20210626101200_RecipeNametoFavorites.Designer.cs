@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecipeApp.Data;
 
-namespace RecipeApp.Data.Migrations
+namespace RecipeApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210625084723_ModeltoDatabase")]
-    partial class ModeltoDatabase
+    [Migration("20210626101200_RecipeNametoFavorites")]
+    partial class RecipeNametoFavorites
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -164,12 +164,10 @@ namespace RecipeApp.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -206,12 +204,10 @@ namespace RecipeApp.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -219,6 +215,27 @@ namespace RecipeApp.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("RecipeApp.Models.Favorites", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("RecipeId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipeName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Favorites");
                 });
 
             modelBuilder.Entity("RecipeApp.Models.Recipes", b =>
@@ -289,6 +306,246 @@ namespace RecipeApp.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<bool>("Ing020")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing021")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing022")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing023")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing024")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing025")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing026")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing027")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing028")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing029")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing030")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing031")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing032")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing033")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing034")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing035")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing036")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing037")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing038")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing039")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing040")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing041")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing042")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing043")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing044")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing045")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing046")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing047")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing048")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing049")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing050")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing051")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing052")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing053")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing054")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing055")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing056")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing057")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing058")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing059")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing060")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing061")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing062")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing063")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing064")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing065")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing066")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing067")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing068")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing069")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing070")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing071")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing072")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing073")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing074")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing075")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing076")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing077")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing078")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing079")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing080")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing081")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing082")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing083")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing084")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing085")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing086")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing087")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing088")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing089")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing090")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing091")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing092")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing093")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing094")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing095")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing096")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing097")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing098")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing099")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Ing100")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
